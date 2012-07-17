@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A98CBEEF15B53CF1002A0905 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98CBEEE15B53CF1002A0905 /* UIKit.framework */; };
+		A98CBEF115B53CF1002A0905 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98CBEF015B53CF1002A0905 /* Foundation.framework */; };
+		A98CBEF315B53CF1002A0905 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98CBEF215B53CF1002A0905 /* CoreGraphics.framework */; };
+		A98CBEF915B53CF1002A0905 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A98CBEF715B53CF1002A0905 /* InfoPlist.strings */; };
+		A98CBEFB15B53CF1002A0905 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A98CBEFA15B53CF1002A0905 /* main.m */; };
+		A98CBEFF15B53CF1002A0905 /* UsingViewsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A98CBEFE15B53CF1002A0905 /* UsingViewsAppDelegate.m */; };
+		A98CBF0215B53CF1002A0905 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98CBF0015B53CF1002A0905 /* MainWindow.xib */; };
+		A98CBF0515B53CF1002A0905 /* UsingViewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A98CBF0415B53CF1002A0905 /* UsingViewsViewController.m */; };
+		A98CBF0815B53CF1002A0905 /* UsingViewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98CBF0615B53CF1002A0905 /* UsingViewsViewController.xib */; };
+		A98CBF1315B54A4D002A0905 /* 1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = A98CBF0E15B54A4D002A0905 /* 1.JPG */; };
+		A98CBF1415B54A4D002A0905 /* 2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = A98CBF0F15B54A4D002A0905 /* 2.JPG */; };
+		A98CBF1515B54A4D002A0905 /* 3.JPG in Resources */ = {isa = PBXBuildFile; fileRef = A98CBF1015B54A4D002A0905 /* 3.JPG */; };
+		A98CBF1615B54A4D002A0905 /* 4.JPG in Resources */ = {isa = PBXBuildFile; fileRef = A98CBF1115B54A4D002A0905 /* 4.JPG */; };
+		A98CBF1715B54A4D002A0905 /* 5.JPG in Resources */ = {isa = PBXBuildFile; fileRef = A98CBF1215B54A4D002A0905 /* 5.JPG */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A98CBEEA15B53CF1002A0905 /* UsingViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsingViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A98CBEEE15B53CF1002A0905 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A98CBEF015B53CF1002A0905 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A98CBEF215B53CF1002A0905 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A98CBEF615B53CF1002A0905 /* UsingViews-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UsingViews-Info.plist"; sourceTree = "<group>"; };
+		A98CBEF815B53CF1002A0905 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A98CBEFA15B53CF1002A0905 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A98CBEFC15B53CF1002A0905 /* UsingViews-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UsingViews-Prefix.pch"; sourceTree = "<group>"; };
+		A98CBEFD15B53CF1002A0905 /* UsingViewsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsingViewsAppDelegate.h; sourceTree = "<group>"; };
+		A98CBEFE15B53CF1002A0905 /* UsingViewsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsingViewsAppDelegate.m; sourceTree = "<group>"; };
+		A98CBF0115B53CF1002A0905 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		A98CBF0315B53CF1002A0905 /* UsingViewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsingViewsViewController.h; sourceTree = "<group>"; };
+		A98CBF0415B53CF1002A0905 /* UsingViewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsingViewsViewController.m; sourceTree = "<group>"; };
+		A98CBF0715B53CF1002A0905 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/UsingViewsViewController.xib; sourceTree = "<group>"; };
+		A98CBF0E15B54A4D002A0905 /* 1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.JPG; sourceTree = "<group>"; };
+		A98CBF0F15B54A4D002A0905 /* 2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.JPG; sourceTree = "<group>"; };
+		A98CBF1015B54A4D002A0905 /* 3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.JPG; sourceTree = "<group>"; };
+		A98CBF1115B54A4D002A0905 /* 4.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.JPG; sourceTree = "<group>"; };
+		A98CBF1215B54A4D002A0905 /* 5.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.JPG; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A98CBEE715B53CF1002A0905 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A98CBEEF15B53CF1002A0905 /* UIKit.framework in Frameworks */,
+				A98CBEF115B53CF1002A0905 /* Foundation.framework in Frameworks */,
+				A98CBEF315B53CF1002A0905 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A98CBEDF15B53CF1002A0905 = {
+			isa = PBXGroup;
+			children = (
+				A98CBEF415B53CF1002A0905 /* UsingViews */,
+				A98CBEED15B53CF1002A0905 /* Frameworks */,
+				A98CBEEB15B53CF1002A0905 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A98CBEEB15B53CF1002A0905 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A98CBEEA15B53CF1002A0905 /* UsingViews.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A98CBEED15B53CF1002A0905 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A98CBEEE15B53CF1002A0905 /* UIKit.framework */,
+				A98CBEF015B53CF1002A0905 /* Foundation.framework */,
+				A98CBEF215B53CF1002A0905 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A98CBEF415B53CF1002A0905 /* UsingViews */ = {
+			isa = PBXGroup;
+			children = (
+				A98CBEFD15B53CF1002A0905 /* UsingViewsAppDelegate.h */,
+				A98CBEFE15B53CF1002A0905 /* UsingViewsAppDelegate.m */,
+				A98CBF0015B53CF1002A0905 /* MainWindow.xib */,
+				A98CBF0315B53CF1002A0905 /* UsingViewsViewController.h */,
+				A98CBF0415B53CF1002A0905 /* UsingViewsViewController.m */,
+				A98CBF0615B53CF1002A0905 /* UsingViewsViewController.xib */,
+				A98CBEF515B53CF1002A0905 /* Supporting Files */,
+			);
+			path = UsingViews;
+			sourceTree = "<group>";
+		};
+		A98CBEF515B53CF1002A0905 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A98CBF0E15B54A4D002A0905 /* 1.JPG */,
+				A98CBF0F15B54A4D002A0905 /* 2.JPG */,
+				A98CBF1015B54A4D002A0905 /* 3.JPG */,
+				A98CBF1115B54A4D002A0905 /* 4.JPG */,
+				A98CBF1215B54A4D002A0905 /* 5.JPG */,
+				A98CBEF615B53CF1002A0905 /* UsingViews-Info.plist */,
+				A98CBEF715B53CF1002A0905 /* InfoPlist.strings */,
+				A98CBEFA15B53CF1002A0905 /* main.m */,
+				A98CBEFC15B53CF1002A0905 /* UsingViews-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A98CBEE915B53CF1002A0905 /* UsingViews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A98CBF0B15B53CF1002A0905 /* Build configuration list for PBXNativeTarget "UsingViews" */;
+			buildPhases = (
+				A98CBEE615B53CF1002A0905 /* Sources */,
+				A98CBEE715B53CF1002A0905 /* Frameworks */,
+				A98CBEE815B53CF1002A0905 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UsingViews;
+			productName = UsingViews;
+			productReference = A98CBEEA15B53CF1002A0905 /* UsingViews.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A98CBEE115B53CF1002A0905 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = A98CBEE415B53CF1002A0905 /* Build configuration list for PBXProject "UsingViews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A98CBEDF15B53CF1002A0905;
+			productRefGroup = A98CBEEB15B53CF1002A0905 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A98CBEE915B53CF1002A0905 /* UsingViews */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A98CBEE815B53CF1002A0905 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A98CBEF915B53CF1002A0905 /* InfoPlist.strings in Resources */,
+				A98CBF0215B53CF1002A0905 /* MainWindow.xib in Resources */,
+				A98CBF0815B53CF1002A0905 /* UsingViewsViewController.xib in Resources */,
+				A98CBF1315B54A4D002A0905 /* 1.JPG in Resources */,
+				A98CBF1415B54A4D002A0905 /* 2.JPG in Resources */,
+				A98CBF1515B54A4D002A0905 /* 3.JPG in Resources */,
+				A98CBF1615B54A4D002A0905 /* 4.JPG in Resources */,
+				A98CBF1715B54A4D002A0905 /* 5.JPG in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A98CBEE615B53CF1002A0905 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A98CBEFB15B53CF1002A0905 /* main.m in Sources */,
+				A98CBEFF15B53CF1002A0905 /* UsingViewsAppDelegate.m in Sources */,
+				A98CBF0515B53CF1002A0905 /* UsingViewsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A98CBEF715B53CF1002A0905 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A98CBEF815B53CF1002A0905 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A98CBF0015B53CF1002A0905 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A98CBF0115B53CF1002A0905 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		A98CBF0615B53CF1002A0905 /* UsingViewsViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A98CBF0715B53CF1002A0905 /* en */,
+			);
+			name = UsingViewsViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A98CBF0915B53CF1002A0905 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A98CBF0A15B53CF1002A0905 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A98CBF0C15B53CF1002A0905 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UsingViews/UsingViews-Prefix.pch";
+				INFOPLIST_FILE = "UsingViews/UsingViews-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A98CBF0D15B53CF1002A0905 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UsingViews/UsingViews-Prefix.pch";
+				INFOPLIST_FILE = "UsingViews/UsingViews-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A98CBEE415B53CF1002A0905 /* Build configuration list for PBXProject "UsingViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A98CBF0915B53CF1002A0905 /* Debug */,
+				A98CBF0A15B53CF1002A0905 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A98CBF0B15B53CF1002A0905 /* Build configuration list for PBXNativeTarget "UsingViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A98CBF0C15B53CF1002A0905 /* Debug */,
+				A98CBF0D15B53CF1002A0905 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A98CBEE115B53CF1002A0905 /* Project object */;
+}
