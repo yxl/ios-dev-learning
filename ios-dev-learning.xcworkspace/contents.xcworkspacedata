@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:DynamicViews/DynamicViews.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:UsingViews2/UsingViews2.xcodeproj">
    </FileRef>
    <FileRef

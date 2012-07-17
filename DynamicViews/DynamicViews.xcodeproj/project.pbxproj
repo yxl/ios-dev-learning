@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A98CBF6315B565DF002A0905 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98CBF6215B565DF002A0905 /* UIKit.framework */; };
+		A98CBF6515B565DF002A0905 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98CBF6415B565DF002A0905 /* Foundation.framework */; };
+		A98CBF6715B565DF002A0905 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98CBF6615B565DF002A0905 /* CoreGraphics.framework */; };
+		A98CBF6D15B565DF002A0905 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A98CBF6B15B565DF002A0905 /* InfoPlist.strings */; };
+		A98CBF6F15B565DF002A0905 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A98CBF6E15B565DF002A0905 /* main.m */; };
+		A98CBF7315B565DF002A0905 /* DynamicViewsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A98CBF7215B565DF002A0905 /* DynamicViewsAppDelegate.m */; };
+		A98CBF7615B565DF002A0905 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98CBF7415B565DF002A0905 /* MainWindow.xib */; };
+		A98CBF7915B565DF002A0905 /* DynamicViewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A98CBF7815B565DF002A0905 /* DynamicViewsViewController.m */; };
+		A98CBF7C15B565DF002A0905 /* DynamicViewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98CBF7A15B565DF002A0905 /* DynamicViewsViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A98CBF5E15B565DF002A0905 /* DynamicViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A98CBF6215B565DF002A0905 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A98CBF6415B565DF002A0905 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A98CBF6615B565DF002A0905 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A98CBF6A15B565DF002A0905 /* DynamicViews-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DynamicViews-Info.plist"; sourceTree = "<group>"; };
+		A98CBF6C15B565DF002A0905 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A98CBF6E15B565DF002A0905 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A98CBF7015B565DF002A0905 /* DynamicViews-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DynamicViews-Prefix.pch"; sourceTree = "<group>"; };
+		A98CBF7115B565DF002A0905 /* DynamicViewsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicViewsAppDelegate.h; sourceTree = "<group>"; };
+		A98CBF7215B565DF002A0905 /* DynamicViewsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicViewsAppDelegate.m; sourceTree = "<group>"; };
+		A98CBF7515B565DF002A0905 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		A98CBF7715B565DF002A0905 /* DynamicViewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicViewsViewController.h; sourceTree = "<group>"; };
+		A98CBF7815B565DF002A0905 /* DynamicViewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicViewsViewController.m; sourceTree = "<group>"; };
+		A98CBF7B15B565DF002A0905 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DynamicViewsViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A98CBF5B15B565DF002A0905 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A98CBF6315B565DF002A0905 /* UIKit.framework in Frameworks */,
+				A98CBF6515B565DF002A0905 /* Foundation.framework in Frameworks */,
+				A98CBF6715B565DF002A0905 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A98CBF5315B565DE002A0905 = {
+			isa = PBXGroup;
+			children = (
+				A98CBF6815B565DF002A0905 /* DynamicViews */,
+				A98CBF6115B565DF002A0905 /* Frameworks */,
+				A98CBF5F15B565DF002A0905 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A98CBF5F15B565DF002A0905 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A98CBF5E15B565DF002A0905 /* DynamicViews.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A98CBF6115B565DF002A0905 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A98CBF6215B565DF002A0905 /* UIKit.framework */,
+				A98CBF6415B565DF002A0905 /* Foundation.framework */,
+				A98CBF6615B565DF002A0905 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A98CBF6815B565DF002A0905 /* DynamicViews */ = {
+			isa = PBXGroup;
+			children = (
+				A98CBF7115B565DF002A0905 /* DynamicViewsAppDelegate.h */,
+				A98CBF7215B565DF002A0905 /* DynamicViewsAppDelegate.m */,
+				A98CBF7415B565DF002A0905 /* MainWindow.xib */,
+				A98CBF7715B565DF002A0905 /* DynamicViewsViewController.h */,
+				A98CBF7815B565DF002A0905 /* DynamicViewsViewController.m */,
+				A98CBF7A15B565DF002A0905 /* DynamicViewsViewController.xib */,
+				A98CBF6915B565DF002A0905 /* Supporting Files */,
+			);
+			path = DynamicViews;
+			sourceTree = "<group>";
+		};
+		A98CBF6915B565DF002A0905 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A98CBF6A15B565DF002A0905 /* DynamicViews-Info.plist */,
+				A98CBF6B15B565DF002A0905 /* InfoPlist.strings */,
+				A98CBF6E15B565DF002A0905 /* main.m */,
+				A98CBF7015B565DF002A0905 /* DynamicViews-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A98CBF5D15B565DF002A0905 /* DynamicViews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A98CBF7F15B565DF002A0905 /* Build configuration list for PBXNativeTarget "DynamicViews" */;
+			buildPhases = (
+				A98CBF5A15B565DF002A0905 /* Sources */,
+				A98CBF5B15B565DF002A0905 /* Frameworks */,
+				A98CBF5C15B565DF002A0905 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicViews;
+			productName = DynamicViews;
+			productReference = A98CBF5E15B565DF002A0905 /* DynamicViews.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A98CBF5515B565DE002A0905 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = A98CBF5815B565DE002A0905 /* Build configuration list for PBXProject "DynamicViews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A98CBF5315B565DE002A0905;
+			productRefGroup = A98CBF5F15B565DF002A0905 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A98CBF5D15B565DF002A0905 /* DynamicViews */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A98CBF5C15B565DF002A0905 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A98CBF6D15B565DF002A0905 /* InfoPlist.strings in Resources */,
+				A98CBF7615B565DF002A0905 /* MainWindow.xib in Resources */,
+				A98CBF7C15B565DF002A0905 /* DynamicViewsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A98CBF5A15B565DF002A0905 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A98CBF6F15B565DF002A0905 /* main.m in Sources */,
+				A98CBF7315B565DF002A0905 /* DynamicViewsAppDelegate.m in Sources */,
+				A98CBF7915B565DF002A0905 /* DynamicViewsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A98CBF6B15B565DF002A0905 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A98CBF6C15B565DF002A0905 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A98CBF7415B565DF002A0905 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A98CBF7515B565DF002A0905 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		A98CBF7A15B565DF002A0905 /* DynamicViewsViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A98CBF7B15B565DF002A0905 /* en */,
+			);
+			name = DynamicViewsViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A98CBF7D15B565DF002A0905 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A98CBF7E15B565DF002A0905 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A98CBF8015B565DF002A0905 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DynamicViews/DynamicViews-Prefix.pch";
+				INFOPLIST_FILE = "DynamicViews/DynamicViews-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A98CBF8115B565DF002A0905 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DynamicViews/DynamicViews-Prefix.pch";
+				INFOPLIST_FILE = "DynamicViews/DynamicViews-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A98CBF5815B565DE002A0905 /* Build configuration list for PBXProject "DynamicViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A98CBF7D15B565DF002A0905 /* Debug */,
+				A98CBF7E15B565DF002A0905 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A98CBF7F15B565DF002A0905 /* Build configuration list for PBXNativeTarget "DynamicViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A98CBF8015B565DF002A0905 /* Debug */,
+				A98CBF8115B565DF002A0905 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A98CBF5515B565DE002A0905 /* Project object */;
+}
