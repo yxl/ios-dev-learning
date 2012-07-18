@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:windowBaseApp/windowBaseApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:viewBasedApp/viewBasedApp.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:DynamicViews/DynamicViews.xcodeproj">
    </FileRef>
    <FileRef
