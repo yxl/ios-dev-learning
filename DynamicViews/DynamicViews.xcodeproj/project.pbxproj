@@ -26,11 +26,11 @@
 		A98CBF6A15B565DF002A0905 /* DynamicViews-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DynamicViews-Info.plist"; sourceTree = "<group>"; };
 		A98CBF6C15B565DF002A0905 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A98CBF6E15B565DF002A0905 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A98CBF7015B565DF002A0905 /* DynamicViews-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DynamicViews-Prefix.pch"; sourceTree = "<group>"; };
-		A98CBF7115B565DF002A0905 /* DynamicViewsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicViewsAppDelegate.h; sourceTree = "<group>"; };
+		A98CBF7015B565DF002A0905 /* DynamicViews-Prefix.pch */ = {isa = PBXFileReference; path = "DynamicViews-Prefix.pch"; sourceTree = "<group>"; };
+		A98CBF7115B565DF002A0905 /* DynamicViewsAppDelegate.h */ = {isa = PBXFileReference; path = DynamicViewsAppDelegate.h; sourceTree = "<group>"; };
 		A98CBF7215B565DF002A0905 /* DynamicViewsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicViewsAppDelegate.m; sourceTree = "<group>"; };
 		A98CBF7515B565DF002A0905 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		A98CBF7715B565DF002A0905 /* DynamicViewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicViewsViewController.h; sourceTree = "<group>"; };
+		A98CBF7715B565DF002A0905 /* DynamicViewsViewController.h */ = {isa = PBXFileReference; path = DynamicViewsViewController.h; sourceTree = "<group>"; };
 		A98CBF7815B565DF002A0905 /* DynamicViewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicViewsViewController.m; sourceTree = "<group>"; };
 		A98CBF7B15B565DF002A0905 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DynamicViewsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
