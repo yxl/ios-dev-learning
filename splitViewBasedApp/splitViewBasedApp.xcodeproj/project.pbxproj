@@ -143,6 +143,9 @@
 /* Begin PBXProject section */
 		A90157FB15B7D1320012EAF1 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
 			buildConfigurationList = A90157FE15B7D1320012EAF1 /* Build configuration list for PBXProject "splitViewBasedApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -266,6 +269,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "splitViewBasedApp/splitViewBasedApp-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "splitViewBasedApp/splitViewBasedApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;
@@ -278,6 +282,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "splitViewBasedApp/splitViewBasedApp-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "splitViewBasedApp/splitViewBasedApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;
@@ -304,6 +309,7 @@
 				A901582A15B7D1320012EAF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
