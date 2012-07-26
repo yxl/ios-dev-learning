@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9B3775215C1495800EEC9BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B3775115C1495800EEC9BD /* UIKit.framework */; };
+		A9B3775415C1495800EEC9BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B3775315C1495800EEC9BD /* Foundation.framework */; };
+		A9B3775615C1495800EEC9BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B3775515C1495800EEC9BD /* CoreGraphics.framework */; };
+		A9B3775C15C1495800EEC9BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9B3775A15C1495800EEC9BD /* InfoPlist.strings */; };
+		A9B3775E15C1495800EEC9BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B3775D15C1495800EEC9BD /* main.m */; };
+		A9B3776215C1495800EEC9BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B3776115C1495800EEC9BD /* AppDelegate.m */; };
+		A9B3776515C1495800EEC9BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B3776415C1495800EEC9BD /* ViewController.m */; };
+		A9B3776815C1495800EEC9BD /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9B3776615C1495800EEC9BD /* ViewController.xib */; };
+		A9B3777215C14B2F00EEC9BD /* IBXApplicationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B3777115C14B2F00EEC9BD /* IBXApplicationBar.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A9B3774D15C1495800EEC9BD /* SlidingDrawer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlidingDrawer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9B3775115C1495800EEC9BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A9B3775315C1495800EEC9BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A9B3775515C1495800EEC9BD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A9B3775915C1495800EEC9BD /* SlidingDrawer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SlidingDrawer-Info.plist"; sourceTree = "<group>"; };
+		A9B3775B15C1495800EEC9BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A9B3775D15C1495800EEC9BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9B3775F15C1495800EEC9BD /* SlidingDrawer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlidingDrawer-Prefix.pch"; sourceTree = "<group>"; };
+		A9B3776015C1495800EEC9BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A9B3776115C1495800EEC9BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A9B3776315C1495800EEC9BD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A9B3776415C1495800EEC9BD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A9B3776715C1495800EEC9BD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		A9B3777015C14B2F00EEC9BD /* IBXApplicationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBXApplicationBar.h; sourceTree = "<group>"; };
+		A9B3777115C14B2F00EEC9BD /* IBXApplicationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBXApplicationBar.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9B3774A15C1495800EEC9BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9B3775215C1495800EEC9BD /* UIKit.framework in Frameworks */,
+				A9B3775415C1495800EEC9BD /* Foundation.framework in Frameworks */,
+				A9B3775615C1495800EEC9BD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9B3774215C1495800EEC9BD = {
+			isa = PBXGroup;
+			children = (
+				A9B3775715C1495800EEC9BD /* SlidingDrawer */,
+				A9B3775015C1495800EEC9BD /* Frameworks */,
+				A9B3774E15C1495800EEC9BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9B3774E15C1495800EEC9BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9B3774D15C1495800EEC9BD /* SlidingDrawer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9B3775015C1495800EEC9BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9B3775115C1495800EEC9BD /* UIKit.framework */,
+				A9B3775315C1495800EEC9BD /* Foundation.framework */,
+				A9B3775515C1495800EEC9BD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9B3775715C1495800EEC9BD /* SlidingDrawer */ = {
+			isa = PBXGroup;
+			children = (
+				A9B3776F15C14B2F00EEC9BD /* SlidingDrawerMenu */,
+				A9B3776015C1495800EEC9BD /* AppDelegate.h */,
+				A9B3776115C1495800EEC9BD /* AppDelegate.m */,
+				A9B3776315C1495800EEC9BD /* ViewController.h */,
+				A9B3776415C1495800EEC9BD /* ViewController.m */,
+				A9B3776615C1495800EEC9BD /* ViewController.xib */,
+				A9B3775815C1495800EEC9BD /* Supporting Files */,
+			);
+			path = SlidingDrawer;
+			sourceTree = "<group>";
+		};
+		A9B3775815C1495800EEC9BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9B3775915C1495800EEC9BD /* SlidingDrawer-Info.plist */,
+				A9B3775A15C1495800EEC9BD /* InfoPlist.strings */,
+				A9B3775D15C1495800EEC9BD /* main.m */,
+				A9B3775F15C1495800EEC9BD /* SlidingDrawer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9B3776F15C14B2F00EEC9BD /* SlidingDrawerMenu */ = {
+			isa = PBXGroup;
+			children = (
+				A9B3777015C14B2F00EEC9BD /* IBXApplicationBar.h */,
+				A9B3777115C14B2F00EEC9BD /* IBXApplicationBar.m */,
+			);
+			path = SlidingDrawerMenu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9B3774C15C1495800EEC9BD /* SlidingDrawer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9B3776B15C1495800EEC9BD /* Build configuration list for PBXNativeTarget "SlidingDrawer" */;
+			buildPhases = (
+				A9B3774915C1495800EEC9BD /* Sources */,
+				A9B3774A15C1495800EEC9BD /* Frameworks */,
+				A9B3774B15C1495800EEC9BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlidingDrawer;
+			productName = SlidingDrawer;
+			productReference = A9B3774D15C1495800EEC9BD /* SlidingDrawer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9B3774415C1495800EEC9BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = A9B3774715C1495800EEC9BD /* Build configuration list for PBXProject "SlidingDrawer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A9B3774215C1495800EEC9BD;
+			productRefGroup = A9B3774E15C1495800EEC9BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9B3774C15C1495800EEC9BD /* SlidingDrawer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9B3774B15C1495800EEC9BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9B3775C15C1495800EEC9BD /* InfoPlist.strings in Resources */,
+				A9B3776815C1495800EEC9BD /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9B3774915C1495800EEC9BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9B3775E15C1495800EEC9BD /* main.m in Sources */,
+				A9B3776215C1495800EEC9BD /* AppDelegate.m in Sources */,
+				A9B3776515C1495800EEC9BD /* ViewController.m in Sources */,
+				A9B3777215C14B2F00EEC9BD /* IBXApplicationBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A9B3775A15C1495800EEC9BD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9B3775B15C1495800EEC9BD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A9B3776615C1495800EEC9BD /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9B3776715C1495800EEC9BD /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9B3776915C1495800EEC9BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A9B3776A15C1495800EEC9BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9B3776C15C1495800EEC9BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlidingDrawer/SlidingDrawer-Prefix.pch";
+				INFOPLIST_FILE = "SlidingDrawer/SlidingDrawer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A9B3776D15C1495800EEC9BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlidingDrawer/SlidingDrawer-Prefix.pch";
+				INFOPLIST_FILE = "SlidingDrawer/SlidingDrawer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9B3774715C1495800EEC9BD /* Build configuration list for PBXProject "SlidingDrawer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9B3776915C1495800EEC9BD /* Debug */,
+				A9B3776A15C1495800EEC9BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9B3776B15C1495800EEC9BD /* Build configuration list for PBXNativeTarget "SlidingDrawer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9B3776C15C1495800EEC9BD /* Debug */,
+				A9B3776D15C1495800EEC9BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9B3774415C1495800EEC9BD /* Project object */;
+}
