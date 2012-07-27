@@ -13,7 +13,7 @@
 
 @interface ViewController ()
 {
-  IBXApplicationBar * _applicationBar;
+  SlidingDrawerMenu *_drawerMenu;
 }
 
 @end
@@ -24,31 +24,31 @@
 {
   [super viewDidLoad];
   // Do any additional setup after loading the view, typically from a nib.
-  if (_applicationBar == nil) {
-    _applicationBar = [[IBXApplicationBar alloc] init];
-    [_applicationBar sizeToFit];
+  if (_drawerMenu == nil) 
+  {
+    _drawerMenu = [[SlidingDrawerMenu alloc] initWithDirection:SlidingDrawerMenuDirectionToTop];
+    [_drawerMenu sizeToFit];
     
-    _applicationBar.frame = CGRectMake(0, 
-                                       self.view.frame.size.height - _applicationBar.frame.size.height, 
-                                       _applicationBar.frame.size.width, 
-                                       _applicationBar.frame.size.height);
+    _drawerMenu.frame = CGRectMake(0, 
+                                       self.view.frame.size.height - _drawerMenu.frame.size.height, 
+                                       _drawerMenu.frame.size.width, 
+                                       _drawerMenu.frame.size.height);
     
-    [_applicationBar addOptionButton:@"Feedback"
+    [_drawerMenu addMenuItem:@"Feedback"
                              withTag:TAG_FOR_FEEDBACK_BUTTON];
-    [_applicationBar addOptionButton:@"Create"  
+    [_drawerMenu addMenuItem:@"Create"  
                              withTag:TAG_FOR_CREATE_BUTTON];
     
-    _applicationBar.barDelegate = self;
+    _drawerMenu.menuDelegate = self;
     
     
-    [self.view addSubview:_applicationBar];
-    
+    [self.view addSubview:_drawerMenu];
   }
 }
 
 - (void)viewDidUnload
 {
-  _applicationBar = nil;
+  _drawerMenu = nil;
   [super viewDidUnload];
   // Release any retained subviews of the main view.
 }
@@ -60,8 +60,8 @@
 
 #pragma mark - IBXApplicationBarDelegate
 
-- (void)barButtonClicked:(NSInteger)buttonTag 
-                 withBar:(IBXApplicationBar *)applicationBar
+- (void)menuItemClicked:(NSInteger)buttonTag 
+                 withDrawerMenu:(SlidingDrawerMenu *)drawerMenu
 {
   if (buttonTag == TAG_FOR_CREATE_BUTTON) 
   {
@@ -74,11 +74,21 @@
 }
 
 #pragma mark -
-- (IBAction)btnClicked:(id)sender 
+- (IBAction)topBtnClicked:(id)sender 
 {
-  if (_applicationBar)
+  if (_drawerMenu)
   {
-    [_applicationBar toggleView];
+    _drawerMenu.direction = SlidingDrawerMenuDirectionToBottom;
+    [_drawerMenu toggleView];
+  }
+}
+
+- (IBAction)bottomBtnClicked:(id)sender 
+{
+  if (_drawerMenu)
+  {
+    _drawerMenu.direction = SlidingDrawerMenuDirectionToTop;
+    [_drawerMenu toggleView];
   }
 }
 @end

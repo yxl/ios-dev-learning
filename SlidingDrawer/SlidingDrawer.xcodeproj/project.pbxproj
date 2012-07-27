@@ -15,7 +15,7 @@
 		A9B3776215C1495800EEC9BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B3776115C1495800EEC9BD /* AppDelegate.m */; };
 		A9B3776515C1495800EEC9BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B3776415C1495800EEC9BD /* ViewController.m */; };
 		A9B3776815C1495800EEC9BD /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9B3776615C1495800EEC9BD /* ViewController.xib */; };
-		A9B3777215C14B2F00EEC9BD /* IBXApplicationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B3777115C14B2F00EEC9BD /* IBXApplicationBar.m */; };
+		A9B3777215C14B2F00EEC9BD /* SlidingDrawerMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B3777115C14B2F00EEC9BD /* SlidingDrawerMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +32,8 @@
 		A9B3776315C1495800EEC9BD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A9B3776415C1495800EEC9BD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A9B3776715C1495800EEC9BD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		A9B3777015C14B2F00EEC9BD /* IBXApplicationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBXApplicationBar.h; sourceTree = "<group>"; };
-		A9B3777115C14B2F00EEC9BD /* IBXApplicationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBXApplicationBar.m; sourceTree = "<group>"; };
+		A9B3777015C14B2F00EEC9BD /* SlidingDrawerMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; path = SlidingDrawerMenu.h; sourceTree = "<group>"; };
+		A9B3777115C14B2F00EEC9BD /* SlidingDrawerMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlidingDrawerMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +105,8 @@
 		A9B3776F15C14B2F00EEC9BD /* SlidingDrawerMenu */ = {
 			isa = PBXGroup;
 			children = (
-				A9B3777015C14B2F00EEC9BD /* IBXApplicationBar.h */,
-				A9B3777115C14B2F00EEC9BD /* IBXApplicationBar.m */,
+				A9B3777015C14B2F00EEC9BD /* SlidingDrawerMenu.h */,
+				A9B3777115C14B2F00EEC9BD /* SlidingDrawerMenu.m */,
 			);
 			path = SlidingDrawerMenu;
 			sourceTree = "<group>";
@@ -176,7 +176,7 @@
 				A9B3775E15C1495800EEC9BD /* main.m in Sources */,
 				A9B3776215C1495800EEC9BD /* AppDelegate.m in Sources */,
 				A9B3776515C1495800EEC9BD /* ViewController.m in Sources */,
-				A9B3777215C14B2F00EEC9BD /* IBXApplicationBar.m in Sources */,
+				A9B3777215C14B2F00EEC9BD /* SlidingDrawerMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +288,7 @@
 				A9B3776D15C1495800EEC9BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

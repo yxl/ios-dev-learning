@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "IBXApplicationBar.h"
+#import "SlidingDrawerMenu.h"
 
-@interface ViewController : UIViewController <IBXApplicationBarDelegate>
+@interface ViewController : UIViewController <SlidingDrawerMenuDelegate>
 
-- (IBAction)btnClicked:(id)sender;
+- (IBAction)topBtnClicked:(id)sender;
 
 @end

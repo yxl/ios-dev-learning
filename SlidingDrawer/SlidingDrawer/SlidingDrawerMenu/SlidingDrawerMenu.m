@@ -4,15 +4,16 @@
 //
 //
 
-#import "IBXApplicationBar.h"
+#import "SlidingDrawerMenu.h"
 
 #define DEFAULT_PADDING    10
 #define HIDE_BUTTON_HEIGHT 480
 #define DEFAULT_DURATION   0.2
+#define WINDOW_HEIGHT      460
 
-@interface IBXApplicationBar ()
+@interface SlidingDrawerMenu ()
 {
-  NSMutableArray * _optionButtons;
+  NSMutableArray * _menuItemButtons;
   
   // It is a transparent button which will fill the resest of the screen
   // when the list expands and let user make it contract.
@@ -21,36 +22,42 @@
   UIView * _contentView;
 }
 
+- (void) expand;
+
+- (void) contract;
+
 @end
 
-@implementation IBXApplicationBar
+@implementation SlidingDrawerMenu
 
-@synthesize barDelegate = _barDelegate;
+@synthesize menuDelegate = _menuDelegate;
 
 - (void)dealloc
 {
-  _barDelegate = nil;
+  _menuDelegate = nil;
   _hideButton = nil;
   _contentView = nil;
-  _optionButtons = nil;  
+  _menuItemButtons = nil;  
 }
 
-- (id)init
+- (id) initWithDirection:(SlidingDrawerMenuDirection) direction
 {
   self = [super init];
   if (self) 
   {
+    _direction = direction;
     _contentView = [[UIView alloc] init];
     _contentView.backgroundColor = [UIColor blackColor];
     [self addSubview:_contentView];
     
-    _optionButtons = [[NSMutableArray alloc] init];
-
+    _menuItemButtons = [[NSMutableArray alloc] init];
+    
     _hideButton = [UIButton buttonWithType:UIButtonTypeCustom];
     _hideButton.frame = CGRectZero;
     [_hideButton addTarget:self 
                     action:@selector(toggleView) 
           forControlEvents:UIControlEventTouchUpInside];
+    [_hideButton setTitle:@"Hidden" forState:UIControlStateNormal];
     [self addSubview:_hideButton];
     [self sendSubviewToBack:_hideButton];
     
@@ -64,7 +71,23 @@
   return self;
 }
 
+#pragma mark - direction property
 
+- (void)setDirection:(SlidingDrawerMenuDirection)direction
+{
+  if (_direction == direction)
+  {
+    return;
+  }
+  
+  _direction = direction;
+  [self contract];
+}
+
+- (SlidingDrawerMenuDirection) direction
+{
+  return _direction;
+}
 
 #pragma mark - gestureRecognizer
 
@@ -75,10 +98,10 @@
 
 #pragma mark - other
 
-- (CGFloat)heightForOptionButtons
+- (CGFloat)heightForMenuItems
 {
   CGFloat height = 0;
-  for (UIButton * button in _optionButtons) {
+  for (UIButton * button in _menuItemButtons) {
     height += button.frame.size.height;
   }
   
@@ -87,7 +110,7 @@
 
 - (BOOL)minState
 {
-  return (self.frame.size.height == IBX_APPLICATION_BAR_DEFAULT_HEIGHT);
+  return (self.frame.size.height == SLIDING_DRAWER_MENU_DEFAULT_HEIGHT);
 }
 
 - (void)toggleView
@@ -95,42 +118,85 @@
   [UIView animateWithDuration:DEFAULT_DURATION animations:^(void) {
     if ([self minState]) 
     {
-      CGRect frame = self.frame;
-      frame.size.height = IBX_APPLICATION_BAR_DEFAULT_HEIGHT + [self heightForOptionButtons] + HIDE_BUTTON_HEIGHT;
-      frame.origin.y -= [self heightForOptionButtons] + HIDE_BUTTON_HEIGHT;
-      self.frame = frame;
-      
-      frame = _contentView.frame;
-      frame.size.height = IBX_APPLICATION_BAR_DEFAULT_HEIGHT + [self heightForOptionButtons];
-      frame.origin.y += HIDE_BUTTON_HEIGHT;
-      _contentView.frame = frame;
+      [self expand];
     }
     else 
     {
-      CGRect frame = self.frame;
-      frame.size.height = IBX_APPLICATION_BAR_DEFAULT_HEIGHT;
-      frame.origin.y += [self heightForOptionButtons] + HIDE_BUTTON_HEIGHT;
-      self.frame = frame;
-      
-      frame = _contentView.frame;
-      frame.size.height = IBX_APPLICATION_BAR_DEFAULT_HEIGHT + [self heightForOptionButtons];
-      frame.origin.y -= HIDE_BUTTON_HEIGHT;
-      _contentView.frame = frame;
+      [self contract];
     }
   } completion:^(BOOL finished) {
     // do nothing.
   }];
 }
 
+
+- (void) expand
+{
+  CGFloat menuHeight = SLIDING_DRAWER_MENU_DEFAULT_HEIGHT + [self heightForMenuItems];
+  if (_direction == SlidingDrawerMenuDirectionToTop)
+  {
+    CGRect frame = self.frame;
+    frame.size.height = menuHeight + HIDE_BUTTON_HEIGHT;
+    frame.origin.y = - menuHeight;
+    self.frame = frame;
+    
+    frame = _contentView.frame;
+    frame.size.height = menuHeight;
+    frame.origin.y = WINDOW_HEIGHT;
+    _contentView.frame = frame;
+  }
+  else 
+  {
+    CGRect frame = self.frame;
+    frame.size.height = menuHeight + HIDE_BUTTON_HEIGHT;
+    frame.origin.y = 0;
+    self.frame = frame;
+    
+    frame = _contentView.frame;
+    frame.size.height = menuHeight;
+    frame.origin.y = 0;
+    _contentView.frame = frame;    
+  }
+}
+
+- (void) contract
+{
+  CGFloat menuHeight = SLIDING_DRAWER_MENU_DEFAULT_HEIGHT + [self heightForMenuItems];
+  if (_direction == SlidingDrawerMenuDirectionToTop)
+  {
+    CGRect frame = self.frame;
+    frame.size.height = SLIDING_DRAWER_MENU_DEFAULT_HEIGHT;
+    frame.origin.y = WINDOW_HEIGHT;
+    self.frame = frame;
+    
+    frame = _contentView.frame;
+    frame.size.height = menuHeight;
+    frame.origin.y = WINDOW_HEIGHT;
+    _contentView.frame = frame;
+  }
+  else 
+  {
+    CGRect frame = self.frame;
+    frame.size.height = SLIDING_DRAWER_MENU_DEFAULT_HEIGHT;
+    frame.origin.y = -HIDE_BUTTON_HEIGHT;
+    self.frame = frame;
+    
+    frame = _contentView.frame;
+    frame.size.height = menuHeight;
+    frame.origin.y = 0;
+    _contentView.frame = frame;
+  }
+}
+
 - (void)responseButtonTag:(id)sender
 {
   if (![sender isKindOfClass:[UIButton class]]) return;
   
-  if (_barDelegate 
-      && [_barDelegate respondsToSelector:@selector(barButtonClicked:withBar:)]) 
+  if (_menuDelegate 
+      && [_menuDelegate respondsToSelector:@selector(barButtonClicked:withBar:)]) 
   {
     UIButton * button = sender;
-    [_barDelegate barButtonClicked:button.tag withBar:self];
+    [_menuDelegate menuItemClicked:button.tag withDrawerMenu:self];
   }
 }
 
@@ -144,14 +210,15 @@
   if (recoginzer.state == UIGestureRecognizerStateBegan) 
   {
     if ([recoginzer.view isKindOfClass:[UIButton class]]
-        && [_barDelegate respondsToSelector:@selector(barButtonLongPressed:withBar:)]) {
+        && [_menuDelegate respondsToSelector:@selector(barButtonLongPressed:withBar:)]) 
+    {
       UIButton * sender = (UIButton *)recoginzer.view;
-      [_barDelegate barButtonLongPressed:sender.tag withBar:self];
+      [_menuDelegate menuItemLongPressed:sender.tag withDrawerMenu:self];
     }
   }
 }
 
-- (void)optionButtonClicked:(id)sender
+- (void)menuItemClicked:(id)sender
 {
   [self responseButtonTag:sender];
   
@@ -162,15 +229,15 @@
 
 #pragma mark - option button
 
-- (void)addOptionButton:(NSString *)title 
-                withTag:(NSInteger)tag
+- (void)addMenuItem:(NSString *)title 
+            withTag:(NSInteger)tag
 {
-  [self addOptionButton:title withIcon:nil withTag:tag];
+  [self addMenuItem:title withIcon:nil withTag:tag];
 }
 
-- (void)addOptionButton:(NSString *)title withIcon:(UIImage *)image withTag:(NSInteger)tag
+- (void)addMenuItem:(NSString *)title withIcon:(UIImage *)image withTag:(NSInteger)tag
 {
-  CGFloat height = [self heightForOptionButtons] + IBX_APPLICATION_BAR_DEFAULT_HEIGHT;
+  CGFloat height = [self heightForMenuItems] + SLIDING_DRAWER_MENU_DEFAULT_HEIGHT;
   
   UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
   button.tag = tag;
@@ -187,12 +254,12 @@
   [button sizeToFit];
   button.frame = CGRectMake(DEFAULT_PADDING, height,
                             self.frame.size.width - 5 * DEFAULT_PADDING, 
-                            IBX_APPLICATION_BAR_BUTTON_HEIGHT);
+                            SLIDING_DRAWER_MENU_ITEM_HEIGHT);
   [button addTarget:self 
-             action:@selector(optionButtonClicked:) 
+             action:@selector(menuItemClicked:) 
    forControlEvents:UIControlEventTouchUpInside];
   
-  [_optionButtons addObject:button];
+  [_menuItemButtons addObject:button];
   [_contentView addSubview:button];
 }
 
@@ -201,7 +268,7 @@
 - (void)layoutSubviews
 {
   [super layoutSubviews];
-    
+  
   _hideButton.frame = CGRectMake(0, 0, self.frame.size.width, HIDE_BUTTON_HEIGHT);
 }
 
@@ -210,8 +277,8 @@
   [super sizeToFit];
   
   CGRect frame = _contentView.frame;
-  frame.size.width = IBX_APPLICATION_BAR_DEFAULT_WIDTH;
-  frame.size.height = IBX_APPLICATION_BAR_DEFAULT_HEIGHT;
+  frame.size.width = SLIDING_DRAWER_MENU_DEFAULT_WIDTH;
+  frame.size.height = SLIDING_DRAWER_MENU_DEFAULT_HEIGHT;
   _contentView.frame = frame;
   self.frame = _contentView.frame;
 }
